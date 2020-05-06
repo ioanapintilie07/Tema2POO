@@ -12,15 +12,15 @@ class Complex {
 public:
     explicit Complex(float real = 0, float imaginar = 0);
 
-    Complex(const Complex &x);
+    Complex(const Complex &x) = default;
 
-    ~Complex();
+    ~Complex() = default;
 
     friend std::istream &operator>>(std::istream &input, Complex &x);
 
     friend std::ostream &operator<<(std::ostream &output, Complex &x);
 
-    Complex &operator=(const Complex &x);
+    Complex &operator=(const Complex &x) = default;
 
     friend class Vector;
 

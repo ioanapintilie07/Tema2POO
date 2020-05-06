@@ -1,60 +1,32 @@
-Vectorul initial: 1, 1 + i*1, 5 + i*2, 8 + i*9, 8 + i*4
-A fost adaugata valoarea 10 + i*11 pe pozitia 2
-Vectorul modificat: 1, 1 + i*1, 10 + i*11, 5 + i*2, 8 + i*9, 8 + i*4
+Initial: 1+0i, 1+1i, 5+2i, 8+9i, 8+4i
+Adaugat 10+11i: 1+0i, 1+1i, 10+11i, 5+2i, 8+9i, 8+4i
+Eliminat 5+2i: 1+0i, 1+1i, 10+11i, 8+9i, 8+4i
+Vectorul nu este pur imaginar
 
-Vectorul initial: 1, 1 + i*1, 10 + i*11, 5 + i*2, 8 + i*9, 8 + i*4
-A fost eliminata valoarea  5 + i*2
-Vectorul modificat: 1, 1 + i*1, 10 + i*11, 8 + i*9, 8 + i*4
+Adaugat 1i: 1i
+Adaugat 2i: 1i, 2i
+Adaugat 3i: 1i, 2i, 3i
+Adaugat 4i: 1i, 2i, 3i, 4i
+Adaugat 5i: 1i, 2i, 3i, 4i, 5i
+Eliminat 5i: 1i, 2i, 3i, 4i
+Eliminat 4i: 1i, 2i, 3i
+Stiva pur imaginara
 
-Stiva  fara modificari este pur imaginara.
-Stiva initiala: i*1, i*2, i*3, i*4, i*5, i*6
-A fost eliminata valoarea  i*6
-Stiva modificata: i*1, i*2, i*3, i*4, i*5
+Adaugat 56-2i: 56-2i
+Adaugat 3i: 56-2i, 3i
+Eliminat 3i: 56-2i
+Adaugat -6+17i: 56-2i, -6+17i
+Adaugat 8+92i: 56-2i, -6+17i, 8+92i
+Stiva nu este pur imaginara
 
-Stiva initiala: i*1, i*2, i*3, i*4, i*5
-A fost adaugata valoarea 16 + i*23
-Stiva modificata: i*1, i*2, i*3, i*4, i*5, 16 + i*23
-
-Stiva initiala: i*1, i*2, i*3, i*4, i*5, 16 + i*23
-A fost eliminata valoarea  16 + i*23
-Stiva modificata: i*1, i*2, i*3, i*4, i*5
-
-Stiva fara modificari NU este pur imaginara.
-Stiva initiala: 56 + i*2, i*3, 6 + i*17, 39 + i*77, 44 + i*80
-A fost eliminata valoarea  44 + i*80
-Stiva modificata: 56 + i*2, i*3, 6 + i*17, 39 + i*77
-
-Stiva initiala: 56 + i*2, i*3, 6 + i*17, 39 + i*77
-A fost eliminata valoarea  39 + i*77
-Stiva modificata: 56 + i*2, i*3, 6 + i*17
-
-Stiva initiala: 56 + i*2, i*3, 6 + i*17
-A fost adaugata valoarea i*1
-Stiva modificata: 56 + i*2, i*3, 6 + i*17, i*1
-
-Coada fara modificari este pur imaginara. 
-Coada initiala: i*1, i*2, i*3, i*4
-A fost eliminata valoarea  i*4
-Coada modificata: i*1, i*2, i*3
-
-Coada initiala: i*1, i*2, i*3
-A fost eliminata valoarea  i*3
-Coada modificata: i*1, i*2
-
-Coada initiala: i*1, i*2
-A fost eliminata valoarea  i*2
-Coada modificata: i*1
-
-Coada fara modificari NU este pur imaginara.
-Coada initiala: 101 + i*60, 67 + i*12, 39 + i*94, 7 + i*15, 63 + i*2
-A fost adaugata valoarea i*100
-Coada modificata: i*100, 101 + i*60, 67 + i*12, 39 + i*94, 7 + i*15, 63 + i*2
-
-Coada initiala: i*100, 101 + i*60, 67 + i*12, 39 + i*94, 7 + i*15, 63 + i*2
-A fost adaugata valoarea 14 + i*12
-Coada modificata: 14 + i*12, i*100, 101 + i*60, 67 + i*12, 39 + i*94, 7 + i*15, 63 + i*2
-
-Coada initiala: 14 + i*12, i*100, 101 + i*60, 67 + i*12, 39 + i*94, 7 + i*15, 63 + i*2
-A fost eliminata valoarea  63 + i*2
-Coada modificata: 14 + i*12, i*100, 101 + i*60, 67 + i*12, 39 + i*94, 7 + i*15
-
+Adaugat 1i: 1i
+Adaugat 2i: 1i 2i
+Adaugat 3i: 1i 2i 3i
+Adaugat 4i: 1i 2i 3i 4i
+Adaugat 5i: 1i 2i 3i 4i 5i
+Adaugat 6i: 1i 2i 3i 4i 5i 6i
+Adaugat 7i: 1i 2i 3i 4i 5i 6i 7i
+Adaugat 8i: 1i 2i 3i 4i 5i 6i 7i 8i
+Eliminat 1i: 2i 3i 4i 5i 6i 7i 8i
+Eliminat 2i: 3i 4i 5i 6i 7i 8i
+Coada pur imaginara

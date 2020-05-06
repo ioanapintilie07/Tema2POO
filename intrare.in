@@ -11,45 +11,46 @@ adauga
 sterge
 3
 2
-6
+7
+adauga
 0 1
+adauga
 0 2
+adauga
 0 3
+adauga
 0 4
+adauga
 0 5
-0 6
-3
-pop
-push
-16 23
-pop
+sterge
+sterge
 5
-56 2
+adauga
+56 -2
+adauga
 0 3
-6 17
-39 77
-44 80
-3
-pop
-pop
-push 0 1
-2
-4
+sterge
+adauga
+-6 17
+adauga
+8 92
+1
+10
+adauga
 0 1
+adauga
 0 2
+adauga
 0 3
+adauga
 0 4
-3
-dequeue
-dequeue
-dequeue
-5
-101 60
-67 12
-39 94
-7 15
-63 2
-3
-queue 0 100
-queue 14 12
-dequeue
+adauga
+0 5
+adauga
+0 6
+adauga
+0 7
+adauga
+0 8
+sterge
+sterge

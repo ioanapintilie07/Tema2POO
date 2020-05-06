@@ -9,21 +9,19 @@
 
 class Stiva : public Vector {
 public:
-    Stiva(int n, const Complex &number) : Vector(n, number) {};
 
-    explicit Stiva(const Vector &x) : Vector(x) {};
+    Stiva(const Stiva &x) : Vector(x) {};
 
-    explicit Stiva(int dim = 0, Complex *vector = nullptr) : Vector(dim, vector) {};
+    explicit Stiva(int dim = 0, int capacitate = 1, Complex *vector = new Complex[1]) : Vector(dim, capacitate,
+                                                                                               vector) {};
 
     ~Stiva() override = default;
 
     Stiva &operator=(const Stiva &x);
 
-    bool purImaginar() override;
+    void adauga(Complex &valoare, int pozitie) override;
 
-    void adaugare(Complex &valoare, int pozitie) override;
-
-    Complex stergere(int pozitie) override;
+    Complex sterge(int pozitie) override;
 };
 
 

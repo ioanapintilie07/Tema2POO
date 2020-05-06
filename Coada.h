@@ -8,22 +8,41 @@
 #include "Vector.h"
 
 class Coada : public Vector {
+    int first, last;
+
+    void move() override;
+
 public:
-    Coada(int n, const Complex &number) : Vector(n, number) {};
+    Coada(const Coada &x) : Vector(x) {
+        first = x.first;
+        last = x.last;
+    }
 
-    explicit Coada(const Vector &x) : Vector(x) {};
-
-    explicit Coada(int dim = 0, Complex *vector = nullptr) : Vector(dim, vector) {};
+    explicit Coada(int dim = 0, int capacitate = 1, Complex *vector = new Complex[1]) : Vector(dim, capacitate,
+                                                                                               vector) {
+        if (dim == 0)
+            first = last = -1;
+        else {
+            first = 0;
+            last = dim - 1;
+        }
+    };
 
     ~Coada() override = default;
 
     Coada &operator=(const Coada &x);
 
-    bool purImaginar() override;
+    friend std::ostream &operator<<(std::ostream &output, Coada &x);
 
-    void adaugare(Complex &valoare, int pozitie) override;
+    void adauga(Complex &valoare, int pozitie) override;
 
-    Complex stergere(int pozitie) override;
+    Complex sterge(int pozitie) override;
+
+    int getFirst() { return first; }
+
+    int getLast() { return last; }
+
+    Complex *getVector() { return v; }
 };
 
 

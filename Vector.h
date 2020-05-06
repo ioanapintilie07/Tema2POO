@@ -10,15 +10,19 @@
 
 class Vector {
 protected:
-    Complex *v = nullptr;
     int dim;
-public:
+    int capacitate;
 
-    Vector(int n, const Complex &number);
+    void resize();
+
+    virtual void move();
+
+    Complex *v = nullptr;
+public:
 
     Vector(const Vector &x);
 
-    explicit Vector(int dim = 0, Complex *vector = nullptr);
+    explicit Vector(int dim = 0, int capacitate = 1, Complex *vector = new Complex[1]);
 
     virtual ~Vector();
 
@@ -28,11 +32,13 @@ public:
 
     Vector &operator=(const Vector &x);
 
-    virtual void adaugare(Complex &valoare, const int pozitie);
+    virtual void adauga(Complex &valoare, int pozitie);
 
-    virtual Complex stergere(const int pozitie);
+    virtual Complex sterge(int pozitie);
 
-    virtual bool purImaginar() { return true; };
+    bool purImaginar(int start, int stop);
+
+    int getDim() { return dim; };
 };
 
 

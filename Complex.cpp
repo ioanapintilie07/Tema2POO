@@ -9,32 +9,18 @@ Complex::Complex(float real, float imaginar) {
     im = imaginar;
 }
 
-Complex::Complex(const Complex &x) {
-    re = x.re;
-    im = x.im;
-}
-
-Complex::~Complex() {
-    re = 0;
-    im = 0;
-}
-
-Complex &Complex::operator=(const Complex &x) {
-    re = x.re;
-    im = x.im;
-}
-
 std::istream &operator>>(std::istream &input, Complex &x) {
     input >> x.re >> x.im;
     return input;
 }
 
 std::ostream &operator<<(std::ostream &output, Complex &x) {
-    if (x.re == 0) {
-        if (x.im == 0)
-            output << 0;
-        else output << "i*" << x.im;
-    } else if (x.im == 0) output << x.re;
-    else output << x.re << " + i*" << x.im;
+    if (x.re == 0)
+        output << x.im << "i";
+    else {
+        output << x.re;
+        if (x.im >= 0) output << "+";
+        output << x.im << "i";
+    }
     return output;
 }
